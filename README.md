@@ -97,9 +97,9 @@ _Common Questions:
 - _Which URL do you navigate to in order to check that the ELK server is running?
 - You take the public ip of your webserver ex: http://xx.xx.xx.xx:xxxx and see if you can access your server
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-ansible-playbook (filename) to run the playbook 
-ansible-playbook (filename) --list-hosts
-ansible-playbook (filename) --list-tasks
-ansible-playbook (filename) -C or --check
+Here are specific commands you will need to run to download the playbook, update the files, etc._
+ansible-playbook (filename) to run the playbook, 
+ansible-playbook (filename) --list-hosts,
+ansible-playbook (filename) --list-tasks,
+ansible-playbook (filename) -C or --check,
 ansible-playbook -h
