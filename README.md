@@ -93,7 +93,7 @@ _Common Questions:
 - There are two playbook files. filebeat-playbook.yml and metricbeat-playbook.yml. They are both located in the playbook-files folder. 
 - You would copy the YAML files into your ansible container in /etc/ansible and make a new file with same or different name ending in .yml. 
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- You well update your /etc/ansible/hosts file include the group name ex: [Webservers] and underneath that you will add your server IP ex: web-1 10.0.0.5 ansible_python_interpreter=/usr/bin/python3 <The path should be something that is preinstalled.>
+- You well update your /etc/ansible/hosts file include the group name ex: [Webservers] and underneath that you will add your server IP ex: web-1 10.0.0.5 ansible_python_interpreter=/usr/bin/python3 <The path should be something that is preinstalled.> Then when you are copying the YAML file you will need to edit which group you want the changes to take effect in. So if you have a [elk] 10.1.0.5 ansible_python_interpreter=/usr/bin/python3 & [Webservers] 10.0.0.5 ansible_python_interpreter=/usr/bin/python3 and in the YAML file under hosts you will choose Webservers or elk. 
 - _Which URL do you navigate to in order to check that the ELK server is running?
 - You take the public ip of your webserver ex: http://xx.xx.xx.xx:xxxx and see if you can access your server
 
