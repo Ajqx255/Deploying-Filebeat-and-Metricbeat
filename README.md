@@ -102,4 +102,6 @@ ansible-playbook (filename) to run the playbook,
 ansible-playbook (filename) --list-hosts,
 ansible-playbook (filename) --list-tasks,
 ansible-playbook (filename) -C or --check,
-ansible-playbook -h
+ansible-playbook -h,
+or go to:
+https://github.com/Ajqx255/ELK-Project-/blob/main/Linux/Linux%20Commands.txt
