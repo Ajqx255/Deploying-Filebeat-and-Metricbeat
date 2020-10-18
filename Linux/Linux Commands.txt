@@ -19,7 +19,7 @@ docker attach [container name]
 
 cd /etc/ansible
 touch pentest.yml
-# copy the pentest2.yml in github
+# copy the pentest2.yml in github at https://github.com/Ajqx255/ELK-Project-/tree/main/Playbook-Files
 nano pentest.yml and paste the content. 
 # change the host to your specific [hostname]
 # the hostname is inside the /etc/ansible/hosts
@@ -33,7 +33,7 @@ ansible-playbook filename:  [pentest.yml] <-- This is the filename
 # if you havent added an elk machine and security group do this first! 
 still in /etc/ansible
 touch ELK-server
-copy the install-elk.yml in github
+copy the install-elk.yml in github at https://github.com/Ajqx255/ELK-Project-/tree/main/Playbook-Files
 # or just nano the file and save the filename through nano. 
 nano intall-elk.yml and paste content
 ansible-playbook filename: [intsall-elk.yml]
@@ -41,9 +41,9 @@ ansible-playbook filename: [intsall-elk.yml]
 # Install Filebeat & Metric beat. 
 
 nano filebeat-playbook.yml 
-copy the filebeat-playbook.yml in github
+copy the filebeat-playbook.yml in github at https://github.com/Ajqx255/ELK-Project-/tree/main/Playbook-Files
 ansible-playbook filename: [filebeat-playbook.yml]
  
  nano metricbeat-playbook.yml
- copy the metricbeat-playbook.yml in github
+ copy the metricbeat-playbook.yml in github at https://github.com/Ajqx255/ELK-Project-/tree/main/Playbook-Files
  ansible-playbook filename: [metric-paybook.yml]
