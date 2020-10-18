@@ -49,7 +49,7 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | No                  | 10.0.0.4 10.0.0.5    |
-| Absible  | No                  | 10.0.0.6 10.0.0.7    |
+| Ansible  | No                  | 10.0.0.6 10.0.0.7    |
 |          |                     |                      |
 
 ### Elk Configuration
