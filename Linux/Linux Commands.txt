@@ -1,0 +1,49 @@
+# !!! Read the entire document first!!!
+
+# Installing Docker
+
+
+ssh jumpbox@(yourjumpboxip)
+sudo su (to become root)
+apt-get docker.io
+# you can go to hub.docker.com (to select a docker image if you want.)
+# Docker pull your username/your container image <-- is a container image on hub.docker.com
+docker run -ti username/container:image bash
+docker container list -a (see what container & container name is there.)
+docker start [container name]
+docker ps [to make sure it is running]
+docker attach [container name]
+# now you are in your ansible container.
+
+# Creating & Running Playbooks
+
+cd /etc/ansible
+touch pentest.yml
+# copy the pentest2.yml in github
+nano pentest.yml and paste the content. 
+# change the host to your specific [hostname]
+# the hostname is inside the /etc/ansible/hosts
+# if you havent added one see the readme on how to do that. 
+# to run the yml playbook:
+ansible-playbook filename:  [pentest.yml] <-- This is the filename
+# if done correctly this should configure your docker containers. 
+
+# Installing ELK Stack
+
+# if you havent added an elk machine and security group do this first! 
+still in /etc/ansible
+touch ELK-server
+copy the install-elk.yml in github
+# or just nano the file and save the filename through nano. 
+nano intall-elk.yml and paste content
+ansible-playbook filename: [intsall-elk.yml]
+
+# Install Filebeat & Metric beat. 
+
+nano filebeat-playbook.yml 
+copy the filebeat-playbook.yml in github
+ansible-playbook filename: [filebeat-playbook.yml]
+ 
+ nano metricbeat-playbook.yml
+ copy the metricbeat-playbook.yml in github
+ ansible-playbook filename: [metric-paybook.yml]
